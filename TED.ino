@@ -77,7 +77,7 @@ void loop(){
 
   switch(bearState){
     case 0:
-    start();
+    start(); // Trykk knapp for å starte
     break;
     case 1:
     motionSens(); // Idle
