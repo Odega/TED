@@ -36,12 +36,13 @@ char trackTretten[] = "track013.mp3";
 char trackSeksten[] = "track016.mp3";
 char trackSytten[] = "track017.mp3";
 char trackAtten[] = "track018.mp3";
+
 //Gitt-Trykk-Knapp
 char trackTyve[] = "track020.mp3";
 
 //loftmegopp
-char trackTyveSeks[]="track026.mp3";// hva heter du?
-char trackTyveSyv[]="track027.mp3";//kan du lofte meg opp
+char trackTyveSeks[]="track026.mp3";
+char trackTyveSyv[]="track027.mp3";
 
 void setup(){
   Serial.begin(115200);
@@ -226,8 +227,7 @@ void spillAv(int s){
   if(!MP3player.isPlaying()){
 //**********************************
 if(s == 1){ //I DLE (I motion)
-  //int r = random(1,4);
-  int r =1;
+  int r = random(1,4);
   
   if(r == 1){
     MP3player.playMP3(trackTyveTo);
@@ -266,9 +266,8 @@ if(s == 1){ //I DLE (I motion)
   Serial.println(r);
 //**********************************
 }else if(s == 666){ //I kommando
-  //int r=random(1,5);
+  int r=random(1,5);
   
-  int r = 2;
   if(r==1){
      MP3player.playMP3(trackTretten);
     
