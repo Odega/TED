@@ -1,4 +1,4 @@
-//Til MP3 shield
+//Til MP3 shield & SD kort
 #include <SPI.h>
 #include <SdFat.h>
 #include <SdFatUtil.h>
